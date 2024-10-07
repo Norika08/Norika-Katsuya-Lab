@@ -4,8 +4,5 @@
 [ext_resource type="Texture2D" uid="uid://cgi2dtipjiilb" path="res://icon.svg" id="2_sw2p4"]
 
 [node name="ControbablePlayer" type="Sprite2D"]
-script = ExtResource("1_740fx")
-
-[node name="Icon" type="Sprite2D" parent="."]
-position = Vector2(78, 83)
 texture = ExtResource("2_sw2p4")
+script = ExtResource("1_740fx")
