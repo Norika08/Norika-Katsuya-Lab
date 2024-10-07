@@ -1,0 +1,48 @@
+[gd_scene load_steps=2 format=3 uid="uid://dft0tj74oj5re"]
+
+[ext_resource type="Texture2D" uid="uid://cq6cmuvw5mm6d" path="res://Assets/icon.svg" id="1_k5t7r"]
+
+[node name="Robots" type="Node2D"]
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(577, 322)
+
+[node name="Icon" type="Sprite2D" parent="."]
+position = Vector2(576, 240.5)
+scale = Vector2(0.867187, 0.867187)
+texture = ExtResource("1_k5t7r")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_left = 495.0
+offset_top = 300.5
+offset_right = 659.0
+offset_bottom = 532.5
+color = Color(0.355459, 0.494437, 0.586204, 1)
+
+[node name="ColorRect2" type="ColorRect" parent="."]
+offset_left = 446.0
+offset_top = 300.5
+offset_right = 487.0
+offset_bottom = 549.5
+color = Color(0.355459, 0.494437, 0.586204, 1)
+
+[node name="ColorRect4" type="ColorRect" parent="."]
+offset_left = 495.0
+offset_top = 537.5
+offset_right = 555.0
+offset_bottom = 628.5
+color = Color(0.355459, 0.494437, 0.586204, 1)
+
+[node name="ColorRect3" type="ColorRect" parent="."]
+offset_left = 666.0
+offset_top = 300.5
+offset_right = 707.0
+offset_bottom = 549.5
+color = Color(0.355459, 0.494437, 0.586204, 1)
+
+[node name="ColorRect5" type="ColorRect" parent="."]
+offset_left = 598.0
+offset_top = 537.5
+offset_right = 658.0
+offset_bottom = 628.5
+color = Color(0.355459, 0.494437, 0.586204, 1)

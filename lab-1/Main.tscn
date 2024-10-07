@@ -1,0 +1,83 @@
+[gd_scene load_steps=4 format=3 uid="uid://bqa4wyjgu0ifu"]
+
+[ext_resource type="Texture2D" uid="uid://cmnr27lc15sg3" path="res://Assets/dog.png" id="1_0rdh3"]
+[ext_resource type="Texture2D" uid="uid://ct7fddeqyxrtk" path="res://Assets/white poodle.png" id="2_60kuk"]
+[ext_resource type="PackedScene" uid="uid://dft0tj74oj5re" path="res://Robots.tscn" id="2_b2xlp"]
+
+[node name="Main Scene" type="Node2D"]
+
+[node name="ground" type="ColorRect" parent="."]
+offset_left = -36.0
+offset_top = 540.0
+offset_right = 1203.0
+offset_bottom = 684.0
+color = Color(0.818648, 0.371466, 0.210304, 1)
+
+[node name="green tree" type="ColorRect" parent="."]
+offset_left = 60.0
+offset_top = 237.0
+offset_right = 160.0
+offset_bottom = 586.0
+color = Color(0.771517, 0.369652, 0.0420783, 1)
+
+[node name="ColorRect2" type="ColorRect" parent="green tree"]
+layout_mode = 0
+offset_left = -76.0
+offset_top = -195.0
+offset_right = 182.0
+offset_bottom = 190.0
+color = Color(0.513165, 0.53164, 0, 1)
+
+[node name="yellow tree" type="ColorRect" parent="."]
+offset_left = 961.0
+offset_top = 244.0
+offset_right = 1061.0
+offset_bottom = 593.0
+color = Color(0.577084, 0.2687, 0.0177546, 1)
+
+[node name="ColorRect3" type="ColorRect" parent="yellow tree"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -3.011
+anchor_top = -0.648
+anchor_right = -3.011
+anchor_bottom = -0.648
+offset_left = 162.1
+offset_top = 32.152
+offset_right = 541.1
+offset_bottom = 365.152
+color = Color(0.92549, 0.678431, 0, 1)
+
+[node name="red tree" type="ColorRect" parent="."]
+offset_left = 302.0
+offset_top = 230.0
+offset_right = 402.0
+offset_bottom = 579.0
+color = Color(0.411424, 0.183832, 0.0084804, 1)
+
+[node name="ColorRect3" type="ColorRect" parent="red tree"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -3.011
+anchor_top = -0.648
+anchor_right = -3.011
+anchor_bottom = -0.648
+offset_left = 196.1
+offset_top = 87.152
+offset_right = 502.1
+offset_bottom = 392.152
+color = Color(0.79335, 0.161846, 0, 1)
+
+[node name="Dog" type="Sprite2D" parent="."]
+position = Vector2(935, 461)
+scale = Vector2(0.519153, 0.519153)
+texture = ExtResource("1_0rdh3")
+
+[node name="WhitePoodle" type="Sprite2D" parent="."]
+position = Vector2(434, 432)
+scale = Vector2(0.133625, 0.133625)
+texture = ExtResource("2_60kuk")
+
+[node name="Robots" parent="." instance=ExtResource("2_b2xlp")]
+position = Vector2(14, -66)
+scale = Vector2(1.06917, 1.06917)

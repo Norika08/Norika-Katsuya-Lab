@@ -1,0 +1,69 @@
+[gd_scene load_steps=3 format=3 uid="uid://bnblnlvr04d4c"]
+
+[ext_resource type="Texture2D" uid="uid://cq6cmuvw5mm6d" path="res://Assets/icon.svg" id="1_t45if"]
+[ext_resource type="PackedScene" uid="uid://dft0tj74oj5re" path="res://Robots.tscn" id="2_813x1"]
+
+[node name="RockySene" type="Node2D"]
+
+[node name="Icon" type="Sprite2D" parent="."]
+z_index = -4
+position = Vector2(392, 437)
+rotation = 0.539307
+scale = Vector2(0.797851, 0.797851)
+texture = ExtResource("1_t45if")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+z_index = -3
+offset_left = -26.0
+offset_top = 550.0
+offset_right = 1166.0
+offset_bottom = 688.0
+color = Color(0.677825, 0.615641, 0.587068, 1)
+
+[node name="ColorRect2" type="ColorRect" parent="."]
+z_index = -3
+offset_left = 36.0
+offset_top = 349.0
+offset_right = 235.0
+offset_bottom = 567.0
+color = Color(0.77765, 0.560411, 0.617068, 1)
+
+[node name="ColorRect3" type="ColorRect" parent="."]
+z_index = -3
+offset_left = 287.0
+offset_top = 463.0
+offset_right = 486.0
+offset_bottom = 598.0
+color = Color(0.767156, 0.592909, 0.400548, 1)
+
+[node name="ColorRect5" type="ColorRect" parent="."]
+z_index = -3
+offset_left = 519.0
+offset_top = 104.0
+offset_right = 981.0
+offset_bottom = 553.0
+color = Color(0.602874, 0.745495, 0.697282, 1)
+
+[node name="Icon2" type="Sprite2D" parent="."]
+z_index = -3
+position = Vector2(881, 510)
+rotation = -0.286234
+scale = Vector2(0.76939, 0.76939)
+texture = ExtResource("1_t45if")
+
+[node name="ColorRect4" type="ColorRect" parent="."]
+z_index = -3
+offset_left = 919.0
+offset_top = 342.0
+offset_right = 1098.0
+offset_bottom = 608.0
+color = Color(0.608312, 0.72933, 0.796892, 1)
+
+[node name="Icon3" type="Sprite2D" parent="."]
+position = Vector2(125, 306)
+rotation = 3.14159
+scale = Vector2(0.675177, 0.675177)
+texture = ExtResource("1_t45if")
+
+[node name="Robots" parent="." instance=ExtResource("2_813x1")]
+position = Vector2(95, -12)
