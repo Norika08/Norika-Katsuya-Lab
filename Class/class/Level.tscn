@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://dbed8h4pg4i5p"]
+
+[ext_resource type="PackedScene" uid="uid://dd4gj4eitpgk7" path="res://player.tscn" id="1_joswg"]
+[ext_resource type="PackedScene" uid="uid://b7dew6pw7qiah" path="res://enemy.tscn" id="2_ugcry"]
+
+[node name="Level" type="Node2D"]
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(576, 328)
+
+[node name="player" parent="." instance=ExtResource("1_joswg")]
+position = Vector2(313, 130)
+
+[node name="Enemy" parent="." instance=ExtResource("2_ugcry")]
+position = Vector2(232, 367)
+scale = Vector2(0.679688, 0.679688)
