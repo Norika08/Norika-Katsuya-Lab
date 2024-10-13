@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://b7dew6pw7qiah"]
+
+[ext_resource type="Texture2D" uid="uid://cgi2dtipjiilb" path="res://icon.svg" id="1_hta1h"]
+[ext_resource type="Script" path="res://controbable_player.gd" id="2_oco40"]
+
+[node name="Enemy" type="Sprite2D"]
+modulate = Color(0.988211, 0.000812591, 0.0924088, 1)
+position = Vector2(566, 321)
+texture = ExtResource("1_hta1h")
+script = ExtResource("2_oco40")
+speed = 1

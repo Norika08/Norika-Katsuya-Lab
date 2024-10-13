@@ -1,0 +1,8 @@
+[gd_scene load_steps=3 format=3 uid="uid://dpspe378816ba"]
+
+[ext_resource type="Script" path="res://controbable_player.gd" id="1_740fx"]
+[ext_resource type="Texture2D" uid="uid://cgi2dtipjiilb" path="res://icon.svg" id="2_sw2p4"]
+
+[node name="ControbablePlayer" type="Sprite2D"]
+texture = ExtResource("2_sw2p4")
+script = ExtResource("1_740fx")
