@@ -1,0 +1,61 @@
+[gd_scene load_steps=5 format=3 uid="uid://cv5jgmad117s1"]
+
+[ext_resource type="Script" path="res://character_body_2d.gd" id="1_jt15q"]
+[ext_resource type="Texture2D" uid="uid://dn3ftv337ty4k" path="res://icon.svg" id="2_oi38l"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_b32h5"]
+size = Vector2(16, 16)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7dl33"]
+size = Vector2(339, 11)
+
+[node name="in_class_character" type="Node2D"]
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
+script = ExtResource("1_jt15q")
+
+[node name="Camera2D" type="Camera2D" parent="CharacterBody2D"]
+zoom = Vector2(4, 4)
+
+[node name="Icon" type="Sprite2D" parent="CharacterBody2D"]
+scale = Vector2(0.136719, 0.136719)
+texture = ExtResource("2_oi38l")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
+shape = SubResource("RectangleShape2D_b32h5")
+
+[node name="StaticBody2D2" type="StaticBody2D" parent="."]
+position = Vector2(384, -7)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D2"]
+position = Vector2(11.5, 5.5)
+shape = SubResource("RectangleShape2D_7dl33")
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D2"]
+offset_left = -158.0
+offset_right = 182.0
+offset_bottom = 11.0
+
+[node name="StaticBody2D" type="StaticBody2D" parent="StaticBody2D2"]
+position = Vector2(384, -46)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D2/StaticBody2D"]
+position = Vector2(11.5, 5.5)
+shape = SubResource("RectangleShape2D_7dl33")
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D2/StaticBody2D"]
+offset_left = -158.0
+offset_right = 182.0
+offset_bottom = 11.0
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+position = Vector2(0, 24)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(11.5, 5.5)
+shape = SubResource("RectangleShape2D_7dl33")
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D"]
+offset_left = -158.0
+offset_right = 182.0
+offset_bottom = 11.0
